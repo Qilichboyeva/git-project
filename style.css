@@ -1,0 +1,129 @@
+/* General Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("OpenSans-Regular.woff2") format("woff2"),
+    url("OpenSans-Regular.ttf") format("truetypefont"),
+    url("OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans Condensed";
+  src: url("OpenSansCondensed-Bold.woff2") format("woff2"),
+    url("OpenSansCondensed-Bold.ttf") format("truetypefont"),
+    url("OpenSansCondensed-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.text_white {
+  color: #fff;
+}
+
+.text_black {
+  color: #000;
+}
+
+.text_dark {
+  color: #222;
+}
+
+/* End of General Styles */
+
+/* Components */
+
+.btn_red,
+.btn_transparent {
+  padding: 12px 24px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.btn_red,
+.btn_transparent:hover {
+  background-color: #de2e54;
+  border: 2px solid #de2e54;
+}
+
+.btn_red:hover {
+  background-color: #fff;
+  color: #de2e54;
+}
+
+.btn_transparent {
+  border: 2px solid #fff;
+}
+
+.hero_title,
+.section_title {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 43px;
+}
+
+.item_title {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.nav_link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 2px;
+}
+
+.company_name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33px;
+}
+
+.hero_text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 27px;
+}
+
+.item_text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.item_image {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 12px 24px -8px rgba(0, 107, 116, 0.3);
+  border-radius: 24px;
+}
+
+/* End of Components */
