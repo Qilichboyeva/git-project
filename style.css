@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 @font-face {
   font-family: "Open Sans";
   src: url("OpenSans-Regular.woff2") format("woff2"),
@@ -74,15 +78,15 @@
 .hero_title,
 .section_title {
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 43px;
+  line-height: 2.6rem;
 }
 
 .item_title {
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: 29px;
@@ -95,6 +99,12 @@
   font-weight: 700;
   line-height: 21px;
   letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.nav_link:hover,
+.company_name:hover {
+  color: #de2e54;
 }
 
 .company_name {
@@ -102,7 +112,7 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 33px;
+  line-height: 2.05rem;
 }
 
 .hero_text {
@@ -127,3 +137,59 @@
 }
 
 /* End of Components */
+
+/* Nav Styles */
+
+#top_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 24px 170px;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo .company_name {
+  margin-left: 1rem;
+}
+
+#top_nav_links {
+  display: flex;
+}
+
+#top_nav_links li {
+  margin: 0 1rem;
+  list-style-type: none;
+}
+
+/* End of Nav Styles */
+
+/* Hero Styles */
+
+#hero {
+  padding: 0 170px;
+  padding-top: 30px;
+  background: #0eb4c1;
+  display: flex;
+  justify-content: space-between;
+}
+
+#hero_description {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hero_text {
+  width: 70%;
+  margin-top: 16px;
+  margin-bottom: 36px;
+}
+
+/* End of Hero Styles */
