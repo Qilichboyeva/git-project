@@ -12,9 +12,9 @@ html {
 
 @font-face {
   font-family: "Open Sans";
-  src: url("OpenSans-Regular.woff2") format("woff2"),
-    url("OpenSans-Regular.ttf") format("truetypefont"),
-    url("OpenSans-Regular.woff") format("woff");
+  src: url("./fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("./fonts/OpenSans-Regular.ttf") format("truetypefont"),
+    url("./fonts/OpenSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -22,9 +22,9 @@ html {
 
 @font-face {
   font-family: "Open Sans Condensed";
-  src: url("OpenSansCondensed-Bold.woff2") format("woff2"),
-    url("OpenSansCondensed-Bold.ttf") format("truetypefont"),
-    url("OpenSansCondensed-Bold.woff") format("woff");
+  src: url("./fonts/OpenSansCondensed-Bold.woff2") format("woff2"),
+    url("./fonts/OpenSansCondensed-Bold.ttf") format("truetypefont"),
+    url("./fonts/OpenSansCondensed-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -58,6 +58,7 @@ html {
   text-transform: uppercase;
   color: #ffffff;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .btn_red,
@@ -72,6 +73,7 @@ html {
 }
 
 .btn_transparent {
+  background: transparent;
   border: 2px solid #fff;
 }
 
@@ -84,7 +86,7 @@ html {
   line-height: 2.6rem;
 }
 
-.item_title {
+.service_title {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 1.5rem;
   font-style: normal;
@@ -122,14 +124,14 @@ html {
   line-height: 27px;
 }
 
-.item_text {
+.service_text {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   line-height: 24px;
 }
 
-.item_image {
+.service_image {
   width: 200px;
   height: 200px;
   box-shadow: 0px 12px 24px -8px rgba(0, 107, 116, 0.3);
@@ -140,7 +142,8 @@ html {
 
 /* Nav Styles */
 
-#top_nav {
+#top_nav,
+#footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -188,8 +191,74 @@ html {
 
 .hero_text {
   width: 70%;
-  margin-top: 16px;
-  margin-bottom: 36px;
+  margin-top: 1rem;
+  margin-bottom: 2.25rem;
 }
 
 /* End of Hero Styles */
+
+/* Main Styles */
+
+#services_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 288px;
+}
+
+.service {
+  display: flex;
+  margin: 2.5rem 0;
+}
+
+#main .first {
+  margin-top: 3.5rem;
+}
+
+#main .service_description {
+  margin-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#main .service_title {
+  margin-bottom: 1.5rem;
+}
+
+#main .last {
+  margin-bottom: 3.75rem;
+}
+
+#register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0eb4c1;
+  padding: 64px 0;
+}
+
+#register .hero_title {
+  margin-bottom: 40px;
+}
+
+#register .btn_transparent:first-child {
+  margin-right: 40px;
+}
+
+/* End of Main Styles */
+
+/* Footer Styles */
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 24px 170px;
+  background-color: #222;
+}
+
+/* End of Footer Styles */
