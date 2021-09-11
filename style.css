@@ -48,16 +48,16 @@ html {
 
 .btn_red,
 .btn_transparent {
-  padding: 12px 24px;
+  padding: 0.75rem 1.5rem;
   font-family: "Open Sans Condensed", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 0.9rem;
   line-height: 150%;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #ffffff;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   cursor: pointer;
 }
 
@@ -91,15 +91,15 @@ html {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 29px;
+  line-height: 1.9rem;
 }
 
 .nav_link {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 0.9rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 21px;
+  line-height: 1.35rem;
   letter-spacing: 2px;
   text-decoration: none;
 }
@@ -111,7 +111,7 @@ html {
 
 .company_name {
   font-family: "Open Sans", sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 600;
   line-height: 2.05rem;
@@ -119,23 +119,30 @@ html {
 
 .hero_text {
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-style: normal;
-  line-height: 27px;
+  line-height: 1.7rem;
 }
 
 .service_text {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
-  line-height: 24px;
+  line-height: 1.5rem;
 }
 
 .service_image {
   width: 200px;
   height: 200px;
-  box-shadow: 0px 12px 24px -8px rgba(0, 107, 116, 0.3);
-  border-radius: 24px;
+  border-radius: 1.5rem;
+}
+
+#logo img {
+  width: 3rem;
+}
+
+#logo_mobile {
+  display: none;
 }
 
 /* End of Components */
@@ -148,7 +155,7 @@ html {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 24px 170px;
+  padding: 1.5rem 170px;
 }
 
 #logo {
@@ -165,7 +172,7 @@ html {
 }
 
 #top_nav_links li {
-  margin: 0 1rem;
+  margin: 0 0.8rem;
   list-style-type: none;
 }
 
@@ -175,7 +182,7 @@ html {
 
 #hero {
   padding: 0 170px;
-  padding-top: 30px;
+  padding-top: 1.9rem;
   background: #0eb4c1;
   display: flex;
   justify-content: space-between;
@@ -237,15 +244,15 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #0eb4c1;
-  padding: 64px 0;
+  padding: 4rem 0;
 }
 
 #register .hero_title {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 #register .btn_transparent:first-child {
-  margin-right: 40px;
+  margin-right: 2.5rem;
 }
 
 /* End of Main Styles */
@@ -262,3 +269,217 @@ html {
 }
 
 /* End of Footer Styles */
+
+/* Media Queries */
+
+@media screen and (max-width: 1440px) and (min-width: 1201px) {
+  #services_wrap {
+    padding: 120px 180px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1025px) {
+  #top_nav,
+  #footer {
+    padding: 1.5rem 80px;
+    justify-content: space-around;
+  }
+
+  #hero {
+    padding: 0 85px;
+  }
+
+  #services_wrap {
+    padding: 120px 150px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  html {
+    font-size: 14px;
+  }
+
+  #top_nav,
+  #footer {
+    padding: 1.5rem 20px;
+    justify-content: space-around;
+  }
+
+  #hero {
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  #hero_description {
+    width: 300px;
+  }
+
+  .hero_text {
+    width: 90%;
+  }
+
+  #hero_image img {
+    width: 350px;
+  }
+
+  #services_wrap {
+    padding: 80px;
+  }
+
+  .service_image {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  html {
+    font-size: 12px;
+  }
+
+  #top_nav,
+  #footer {
+    padding: 1.5rem 20px;
+    justify-content: space-around;
+  }
+
+  #top_nav .btn_red {
+    display: none;
+  }
+
+  #hero {
+    padding: 30px;
+    padding-top: 1.9rem;
+    background: #0eb4c1;
+    justify-content: center;
+  }
+
+  #hero_description {
+    width: 80%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero_text {
+    width: 90%;
+  }
+
+  #hero_image img {
+    display: none;
+  }
+
+  #services_wrap {
+    padding: 60px;
+  }
+
+  .service {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #main .service_description {
+    margin-left: 0;
+  }
+
+  .service_image {
+    width: 220px;
+  }
+
+  .service_title {
+    font-size: 1.8rem;
+  }
+
+  .service_text {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+
+  #top_nav,
+  #footer {
+    padding: 1.5rem 20px;
+    justify-content: space-around;
+  }
+
+  #top_nav .btn_red,
+  #logo,
+  #hero_image img {
+    display: none;
+  }
+
+  #hero {
+    padding: 30px 10px;
+    padding-top: 1.9rem;
+    background: #0eb4c1;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #hero_description {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero_text {
+    width: 90%;
+  }
+
+  #logo_mobile {
+    display: block;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+
+  .company_name {
+    font-size: 32px;
+    margin-left: 16px;
+  }
+
+  #services_wrap {
+    padding: 40px;
+  }
+
+  .service {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #main .service_description {
+    margin-left: 0;
+  }
+
+  .service_image {
+    width: 220px;
+  }
+
+  .service_title {
+    font-size: 1.8rem;
+  }
+
+  .service_text {
+    font-size: 1.2rem;
+  }
+
+  #register div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #register div .btn_transparent:first-child {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
